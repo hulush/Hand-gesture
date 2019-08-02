@@ -1,31 +1,6 @@
-# capture the hand histogram by placing your hand in the box shown and
-# press 'A' to confirm
-# source is set to inbuilt webcam by default. Pass source=1 to use an
-# external camera.
+capture the hand histogram by placing your hand in the box shown and
+-  press 'A' to confirm
+- source is set to inbuilt webcam by default. Pass source=1 to use an
+- external camera.
 
 
-    # to block a faces in the video stream, set block=True.
-    # if you just want to detect the faces, set block=False
-    # if you do not want to do anything with faces, remove this line
-
-     # detect the hand
-    hand = handy.detect_hand(frame, hist)
-
-
- # to get the outline of the hand
-    # min area of the hand to be detected = 10000 by default
-     # draw fingertips on the outline of the hand, with radius 5 and color red,
-    # filled in.
-
-    # to get the centre of mass of the hand
-
-    #     display the unprocessed, segmented hand
-     #cv2.imshow("Handy", hand.masked)
-#  display the binary version of the hand
-    # cv2.imshow("Handy", hand.binary)
-
-
-    #     display the unprocessed, segmented hand
-     #cv2.imshow("Handy", hand.masked)
-#  display the binary version of the hand
-    # cv2.imshow("Handy", hand.binary)

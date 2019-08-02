@@ -17,8 +17,6 @@ def detect_face(frame, block=False, colour=(0, 0, 0)):
             area = w * h
             X, Y, W, H = x, y, w, h
     cv2.rectangle(frame, (X, Y), (X + W, Y + H), colour, fill)
-
-
 def capture_histogram(source=0):
     cap = cv2.VideoCapture(source)
     while True:
