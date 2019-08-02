@@ -15,7 +15,7 @@ while (True):
     if count == 0:
 
         if len(contour) == 2:
-            cv2.putText(img=frame, text='Engine started',
+            cv2.putText(img=frame, text='Ready',
                         org=(int(100 / 2 - 20), int(100 / 2)),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX,
                         fontScale=1, color=(0, 255, 0))
@@ -26,7 +26,7 @@ while (True):
     if count > 0:
 
         if len(contour) >= 2:
-            cv2.putText(img=frame, text='Go',
+            cv2.putText(img=frame, text='Continue',
                         org=(int(100 / 2 - 20), int(100 / 2)),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX,
                         fontScale=1, color=(255, 0, 0))
@@ -36,7 +36,7 @@ while (True):
 
 
         elif len(contour) == 1:
-            cv2.putText(img=frame, text='Go Go',
+            cv2.putText(img=frame, text='Start',
                         org=(int(100 / 2 - 20), int(100 / 2)),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX,
                         fontScale=1, color=(0, 255, 0))
